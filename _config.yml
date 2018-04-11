@@ -26,7 +26,7 @@ avatar: 'https://witeaa-1252834524.file.myqcloud.com/images/logobig.png'
 search: true
 
 # Night mode
-nightMode: true
+nightMode: false
 
 # Comments 评论功能
 comments:
