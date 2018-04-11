@@ -1,0 +1,22 @@
+language: ruby
+rvm:
+  - 2.3.3
+sudo: false
+install: gem install jekyll jekyll-paginate
+before_script:
+  - mkdir public
+script:
+  - jekyll build -d ./public
+  - ls -l
+  - ls -l public
+after_script:
+  - cd public
+  - echo "witeaa.tk" > CNAME
+  - git init
+  - git config user.name "xjx00"
+  - git config user.email "xjxyklwx@126.com"
+  - git add .
+  - git commit -m "Update"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+branches:
+  only:
