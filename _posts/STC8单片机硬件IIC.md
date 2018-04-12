@@ -1,0 +1,71 @@
+﻿+++
+author = "Alan"
+date = "2018-04-06T03:10:59+08:00"
+share = "true"
+draft = "false"
+title = "STC8单片机硬件IIC"
+image ="![](https://bucket1-1252834524.picgz.myqcloud.com/upload/131674724608394935.png)"
++++
+
+
+--------
+
+1.  IIC功能脚切换寄存器
+
+![](https://bucket1-1252834524.picgz.myqcloud.com/upload/131674694471437914.png)
+
+![](https://bucket1-1252834524.picgz.myqcloud.com/upload/131674695936943036.png)
+
+2. IIC配置寄存器
+
+![](https://bucket1-1252834524.picgz.myqcloud.com/upload/131674698352917195.png)
+
+MSSPEED[6:1]:IIC总线速度（等待时钟数）
+
+![](https://bucket1-1252834524.picgz.myqcloud.com/upload/131674699837917373.png)
+
+![](https://bucket1-1252834524.picgz.myqcloud.com/upload/131674700820522342.png)
+
+3. IIC主机控制寄存器
+
+![](https://bucket1-1252834524.picgz.myqcloud.com/upload/131674702005262273.png)
+
+![](https://bucket1-1252834524.picgz.myqcloud.com/upload/131674705929026038.png)
+
+4. 示例代码
+
+> #include "STC8.h"
+> #include "intrins.h"
+> 
+> #define obSDA =P14;
+> #define obSCL =P15;
+> 
+> #define OBIIC_Wait() while(!(I2CMSST&0x40));\
+>                     I2CMSST &= ~0x40
+
+> #define OBIIC_Start() I2CMSCR = 0x01; OBIIC_Wait()
+> 
+> #define OBIIC_SendData(Data) I2CTXD = Data; I2CMSCR > = 0x02; OBIIC_Wait()
+> 
+> #define OBIIC_RecvACK() I2CMSCR = 0x03;OBIIC_Wait()
+> 
+> #define OBIIC_SendACK() I2CMSST = 0x00;I2CMSCR = 0x05;OBIIC_Wait()
+> 
+> #define OBIIC_SendNAK() I2CMSST = 0x01;I2CMSCR = 0x05;OBIIC_Wait()
+>
+>#define OBIIC_Stop() I2CMSCR = 0x06;OBIIC_Wait()
+>
+>
+> void delay();
+> extern char OBIIC_RecvData();
+    
+在main函数里配置寄存器以启用硬件IIC (iic功能脚可以自己设置，并将P_SW2的最高位置1)
+
+> 	P_SW2=0xb0; 
+> 	I2CCFG=0xe0;
+> 	I2CMSST=0x00;
+
+完整代码下载（暂不提供外网下载）
+[内网高速下载](http://pan.witeaa.tk/index.php?share/folder&user=1&sid=GvheCgzX "") 
+
+
