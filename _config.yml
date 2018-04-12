@@ -19,14 +19,14 @@ footer:
 # Author 配置博主信息
 author: 'WIT电子爱好者协会'
 nickname: '电儿'
-bio: '电子爱好者，热爱技术&设计，简单乐观爱创造'
+bio: '电子爱好者，热爱技术&设计·简单乐观爱创造'
 avatar: 'https://witeaa-1252834524.file.myqcloud.com/images/logobig.png'
 
 # Search
 search: true
 
 # Night mode
-nightMode: false
+nightMode: true
 
 # Comments 评论功能
 comments:
@@ -38,7 +38,7 @@ mathjax: true
 
 # Share
 social-share: true
-social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+social-share-items: ['wechat', 'github']
 
 # theme color 主题皮肤
 theme-color: 'default'  # pink or default
@@ -52,11 +52,11 @@ sns:
   weibo: '//weibo.com/lovecolcol'
   juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
   instagram: '//www.instagram.com/steveliaocn'
-  github: '//github.com/kaeyleo'
+  github: '//github.com/witeaa'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
-recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+recommend-condition-size: 4 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
 paginate: 6
