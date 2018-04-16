@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.3.3
 sudo: false
-install: gem install jekyll jekyll-paginate
+install: gem install jekyll jekyll-paginate redcarpet
 before_script:
   - mkdir public
 script:
