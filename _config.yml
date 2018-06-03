@@ -71,7 +71,7 @@ redcarpet:
 
 
 # RS
-RSS: false
+RSS: true
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
