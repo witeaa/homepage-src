@@ -1,6 +1,6 @@
 # Site settings 配置站点
 title: 'WIT电子爱好者协会'
-description: '很高兴能在这里与你分享对技术和生活的思考'
+description: '很高兴能在这里与你分享对技术的思考'
 keyword: 'WIT电协'
 url: 'https://witeaa.tk' # your host
 
@@ -49,9 +49,6 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  weibo: '//weibo.com/lovecolcol'
-  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
-  instagram: '//www.instagram.com/steveliaocn'
   github: '//github.com/witeaa'
 
 # Tags 设置标签
