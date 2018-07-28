@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GNU C 、ANSI C、标准C、标准c++区别和联系
-date:   2018-02-09  
+date:   2018-07-26  
 cover: https://i.loli.net/2018/07/26/5b594a66a963b.jpg
 categories: 编程
 tags: C/C++
