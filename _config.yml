@@ -10,7 +10,6 @@ baseurl: ''
 
 # Navigation links
 nav:
-  '招新':'/xuanchuan.html'
   home: '/'
   tags: '/tags.html'
 
