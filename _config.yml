@@ -10,6 +10,7 @@ baseurl: ''
 
 # Navigation links
 nav:
+  招新:'/xuanchuan.html'
   home: '/'
   tags: '/tags.html'
 
@@ -54,7 +55,7 @@ sns:
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
-recommend-condition-size: 4 # a tag will be recommended if the size of it is more than this value
+recommend-condition-size: 10 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
 paginate: 6
