@@ -12,10 +12,11 @@ baseurl: ''
 nav:
   home: '/'
   tags: '/tags.html'
+  协会教材: 'https://github.com/witeaa/homepage-source/wiki'
 
 # Footer
 footer:
-  since: 2017
+  since: 2018
 
 # Author 配置博主信息
 author: 'WIT电子爱好者协会'
