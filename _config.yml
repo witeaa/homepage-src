@@ -12,7 +12,7 @@ baseurl: ''
 nav:
   home: '/'
   tags: '/tags.html'
-  协会教材: 'https://github.com/witeaa/homepage-source/wiki'
+  协会教材: 'https://github.com/witeaa/Witeaa-Textbook/wiki'
 
 # Footer
 footer:
