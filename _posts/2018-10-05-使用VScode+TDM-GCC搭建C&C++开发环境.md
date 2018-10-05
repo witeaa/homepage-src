@@ -2,8 +2,8 @@
 layout: post
 title: 告别DEVcpp 使用VScode+TDM-GCC搭建C&C++开发环境
 date: 2018-10-05
-categories: C/C++
-tags: Download下载
+categories: 教程
+tags: C/C++
 ---
 
 
