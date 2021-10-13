@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/witeaa/homepage-source.svg?branch=master)](https://travis-ci.org/witeaa/homepage-source)
+[![Build Status](https://app.travis-ci.com/witeaa/homepage-src.svg?branch=master)](https://app.travis-ci.com/witeaa/homepage-src)
 
 # 文章添加指南
 
