@@ -1,0 +1,28 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+    - name: Commit Pages
+      run: |
+        cd ${{ github.workspace }}/_site && echo "www.witeaa.cn" > CNAME && git init
+        git config user.name "xjx00"
+        git config user.email "xjxyklwx@126.com"
+        git add .
+        git commit -m "Update"
+        git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
