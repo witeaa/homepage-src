@@ -1,5 +1,3 @@
-[![Build Status](https://app.travis-ci.com/witeaa/homepage-src.svg?branch=master)](https://app.travis-ci.com/witeaa/homepage-src)
-
 # 文章添加指南
 
 ### 在_posts 文件夹下存放markdown格式的文章
