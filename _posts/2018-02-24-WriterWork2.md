@@ -1,12 +1,12 @@
 ---
 layout: post
-title: WriterWork2下载
+title: 一款Markdown编辑器：WriterWork2
 date: 2018-01-24
 cover: http://bucket1-1252834524.picgz.myqcloud.com/upload/131639542435846551.png
 categories: Download下载
-tags: WriterWork2
+tags: 几款Markdown编辑器
 ---
-# 一款Markdown编辑器 #
+# 一款Markdown编辑器：WriterWork2 #
 ![](http://bucket1-1252834524.picgz.myqcloud.com/upload/131639542435846551.png)
 --------
 
